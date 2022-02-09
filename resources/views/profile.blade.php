@@ -1,0 +1,204 @@
+<?php require "style\head-1.php"; ?>
+
+<title>
+
+    Profile
+
+</title>
+
+<meta name="description" content="David Garcia's Website Home Page">
+
+</head>
+
+<?php require "style\head-2.php"; ?>
+
+<h2>
+
+    Profile Page
+
+</h2>
+
+<?php require "style\head-3.php"; ?>
+
+<main class="main">
+
+			<h1  class="underline">
+
+				Hi there my name is David, feel free to look around if you want to get to know me :)
+
+			</h1>
+
+			<h2 id="profile-h2" class="underline">
+
+				Personal information:
+
+			</h2>
+
+			<br>
+			<br>
+			<br>
+
+			<article>
+
+				<p>
+
+					<img class="text-img" alt="Mugshot of David" id="profile-david-img" title="David Garcia (me)" src="/img/Picture.jpeg">
+
+						Seems like you are interested about reading some of me then let us start with some information about me.
+						My name is David as you can probably already tell and I am 19 years old by now instead of the 18 you maybe
+						saw on my <span class="highlight">WHO AM I</span> assignment, how time flies. Either way my full name is <span class="highlight">David GARCIA VISEU HENRIQUES</span> and even tho it may sound
+						spanish I sadly am not, sorry to disappoint you on that one. I went to school in Luxembourg and have my diploma on our
+						General secondary education - technical division - engineering section, which basically means that I hopefully will make it through
+						these studies. Further more I made the diploma in English, German and Luxembourgish and you may or may not believe it but we have our
+						own language indeed. Jokes aside it is a pleasure to be able to be here and to start my studies here. If you are interested in some more
+						infomation make sure to check out the follow up text(s).
+
+						<br>
+						<br>
+
+				</p>
+
+			</article>
+
+			<br>
+
+			<div1 class="div1">
+
+				<p>
+
+					Main subjects during my studies in Luxembourg:
+
+					<ul>
+
+						<li> Mathematics </li>
+
+						<li> Physics </li>
+
+						<li> Chemistry </li>
+
+						<li> Technology </li>
+
+					</ul>
+
+			</p>
+
+			</div1>
+
+			<div2 class="div2">
+
+				<p>
+
+					Other subjects of importance during my studies in Luxembourg:
+
+					<ul>
+
+						<li>  Eletrical engineering </li>
+
+						<li> Mechanics </li>
+
+						<li> Computer science (Java) </li>
+
+						<li> Global studies </li>
+
+					</ul>
+
+				</p>
+
+			</div2>
+
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+
+			<h3 class="underline">
+
+				EXTRA-CURRICULAR ACTIVITIES (e.g. student job and leisure):
+
+			</h3>
+
+			<p>
+
+				Do you work/are you planning to work alongside your studies? What do you do in your spare time? How do you think
+				you can combine this with studying?
+
+			</p>
+
+			<article>
+
+				<p>
+
+					I do not plan on going to work during my studies but if for whatever reason money gets short I will not hesitate to get a job and to earn some money on the side.
+					I spend a lot of time on youtube watching a variety of videos which reaches from comedy to informative videos. I also invest some time into costumizing hardware
+					(more like keyboards). I have built one myself and am getting new things for it whenever a possability approaches. I also play videogames when I have time which
+					is sadly not often the case but which is fine with me.
+					is sadly not often the case but which is fine with me.
+					<br>
+					A good way to combine my hobbies/interests with my studies would be to maybe talk to people and see if they share the same interests as I do and therefor work
+					more efficiently with and for them. I would also like to inspire people with it and maybe awake someone's interest with it. We could maybe work on a project
+					and at the end we all would learn something out of it. I also think that combining my hobbies with the studies will maybe come in handy when it comes to understanding
+					of linking between certain IT subjects.
+
+				</p>
+
+			</article>
+
+			<article>
+
+				<p>
+
+					If you have further questions about me or if something is not clear yet and you need some more answeres, please consider on contacting
+					me through any of these platforms:
+
+					<ul>
+
+						<li> <a href=""><span class="underline"> E-mail: Nexuss02@outlook.com </span> </a> </li>
+						<li> <a href="https://www.facebook.com/profile.php?id=100006327525211" target="_blank" rel="noopener noreferrer"> Facebook: Garcia David  </li>
+						<li> <a href="https://www.instagram.com/cxllmedxvid/" target="_blank" rel="noopener noreferrer"> Instagram: cxllmedxvid  </li>
+						<li> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer"> Onlyfans </li>
+
+					</ul>
+
+				</p>
+
+			</article>
+
+		</main>
+
+		<footer>
+
+			<aside class="footer-aside">
+
+				<ul class="footer-ul-1">
+
+					<li> <a href="https://hz.nl/uploads/documents/Regelingen/OERS/2021-2022/HZ-Course-and-Examination-Regulations-2021-2022.pdf" target="_blank" rel="noopener noreferrer"> The HZ HBO-ICT Course and Examination Regulations (CER) </li>
+
+					<li> <a href="https://hz.nl/uploads/documents/Regelingen/OERS/2019-2020/2020-2021-ICT-Implementation-Regulations-CER-HZ-DEF1.0.pdf" target="_blank" rel="noopener noreferrer"> The Implementation Regulations (IR) of the HBO-ICT programme </li>
+
+					<li> <a href="https://github.com/HZ-HBO-ICT" target="_blank" rel="noopener noreferrer"> Github environment of the HBO-ICT Course </li>
+
+				</ul>
+
+				<ul class="footer-ul-2">
+
+					<li> <a href="https://teams.microsoft.com/l/team/19%3a2e2afa0286b04932be16cb8ad2d9d2c0%40thread.skype/conversations?groupId=95bddebc-a340-4d88-81fc-b80e0bfc70c3&tenantId=4c16deb3-342d-4fca-bcd5-b1429308034c" target="_blank" rel="noopener noreferrer"> Teams environment of the HBO-ICT Course </li>
+
+					<li> <a href="https://learn.hz.nl/" target="_blank" rel="noopener noreferrer"> Learn environment </li>
+
+					<li> <a href="https://apps.hz.nl/angular/studievoortgang/studiestatus" target="_blank" rel="noopener noreferrer"> MyHZ </li>
+
+				</ul>
+
+				<a href="https://hz.nl/" target="_blank" rel="noopener noreferrer"> <img alt="HZ Logo" src="/img/hz-pic.png" title="HZ Logo" class="img"> </a>
+
+			</aside>
+
+		</footer>
+
+	</body>
+
+</html>
