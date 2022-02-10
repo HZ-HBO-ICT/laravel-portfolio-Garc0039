@@ -53,7 +53,6 @@
 	margin-left: auto;
 	margin-right: auto;
 	width: 67%;
-	margin: 0px;
 	position: fixed;
 	top: 0;
 }
@@ -192,7 +191,9 @@
 
 #programming-yes
 {
-	font-size: 550px; font-style: bold; text-align: center;
+	font-size: 550px;
+    font-weight: bold;
+    text-align: center;
 }
 
 #section-article-img
@@ -235,7 +236,7 @@ header h2
 	color: white;
 	padding: 5px;
 	text-align: center;
-	height: auto;
+	/*height: auto;*/
 }
 
 p
@@ -416,15 +417,15 @@ footer aside ul li a:hover
 
 .footer-ul-1
 {
-	margin-left: 57px;
-	margin-right: 57px;
+	margin-left: 292px;
+	margin-right: 292px;
 }
 
 .footer-ul-2
 {
 	border-top: none;
-	margin-left: 310px;
-	margin-right: 310px;
+	margin-left: 500px;
+	margin-right: 500px;
 }
 
 /* --- */

@@ -3,7 +3,7 @@
 
 </header>
 
-<img src="/img/logo.png" id="logo" href="crunchyroll.com" target="_blank" rel="noopener noreferrer">
+<img src="/img/logo.png" id="logo" href="https://www.crunchyroll.com/" target="_blank" rel="noopener noreferrer">
 
 <nav>
 

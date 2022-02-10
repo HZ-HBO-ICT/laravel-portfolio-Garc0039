@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\{ProfileController, WelcomeController, BlogController, FaqController, DashboardController};
+use App\Http\Controllers\{ProfileController, WelcomeController, BlogController, FaqController, DashboardController, PostController};
 
 
 /*
@@ -18,33 +18,9 @@ use App\Http\Controllers\{ProfileController, WelcomeController, BlogController, 
 Route::get('/', [WelcomeController::class, 'show']);
 Route::get('/profile', [ProfileController::class, 'show']);
 Route::get('/blog', [BlogController::class, 'show']);
-Route::get('/blog/{blog}', function($blog) {
-    $blogs = [
-        'blog-post-company-safari',
-        'blog-post-first-feedback'
-    ];
-
-    if (array_search($blog, $blogs) === null) {
-        abort(404, 'Sorry, that blog was not found.');
-    }
-
-    return view($blog);
-});
+Route::get('/blog/{blog}', [BlogController::class, 'showBlogs']);
 Route::get('/faq', [FaqController::class, 'show']);
 Route::get('/dashboard', [DashboardController::class, 'show']);
 
-Route::get('/posts/{post}', function ($post) {
-    $posts = [
-        'my-first-post' => 'Hello, this is my first blog post!',
-        'my-second-post' => 'Now I am getting the hang of this blogging thing.'
-    ];
-
-    if (!array_key_exists($post, $posts)) {
-        abort(404, 'Sorry, that post was not found.');
-    }
-
-    return view('post', [
-        'post' => $posts[$post]
-    ]);
-});
+Route::get('/post/{post}', [PostController::class, 'show']);
 
