@@ -1,265 +1,240 @@
-<?php require "style\head-1.php"; ?>
+@extends('layout')
 
-<title>
-
-    Dashboard
-
-</title>
-
-<meta name="description" content="David Garcia's Website Dashboard Page">
-
-</head>
-
-<?php require "style\head-2.php"; ?>
-
-<h2>
-
+@section('title')
     Dashboard Page
+@endsection
 
-</h2>
+@section('content')
+    <div id="div-table">
 
-<?php require "style\head-3.php"; ?>
-		<main>
+        <table>
 
-			<div id="div-table">
+            <thead>
 
-				<table>
+                <tr>
 
-					<thead>
+                    <th/> Quartile
 
-						<tr>
+                    <th/> Course
 
-							<th/> Quartile
+                    <th/> EC
 
-							<th/> Course
+                    <th/> Exam
 
-							<th/> EC
+                    <th/> Grade
 
-							<th/> Exam
+                </tr>
 
-							<th/> Grade
+            </thead>
 
-						</tr>
+            <tbody>
 
-					</thead>
+                <tr>
 
-					<tbody>
+                    <td/ rowspan="3"> 1
 
-						<tr>
+                    <td/> Program and Career Orientation
 
-							<td/ rowspan="3"> 1
+                    <td/> 2,5
 
-							<td/> Program and Career Orientation
+                    <td/> Assessment
 
-							<td/> 2,5
+                    <td/> -
 
-							<td/> Assessment
+                </tr>
 
-							<td/> -
+                <tr>
 
-						</tr>
+                    <td/> Computer Science Basics
 
-						<tr>
+                    <td/> 5
 
-							<td/> Computer Science Basics
+                    <td/> Written Exam
 
-							<td/> 5
+                    <td/> -
 
-							<td/> Written Exam
+                </tr>
 
-							<td/> -
+                <tr>
 
-						</tr>
+                    <td/> Programming Basics
 
-						<tr>
+                    <td/> 5
 
-							<td/> Programming Basics
+                    <td/> Case study
 
-							<td/> 5
+                    <td/> -
 
-							<td/> Case study
 
-							<td/> -
+                </tr>
 
+                <tr>
 
-						</tr>
+                    <td/ rowspan="2"> 2
 
-						<tr>
+                    <td/ rowspan="2"> Object Oriented Programming
 
-							<td/ rowspan="2"> 2
+                    <td/ rowspan="2"> 10
 
-							<td/ rowspan="2"> Object Oriented Programming
+                    <td/> Case study
 
-							<td/ rowspan="2"> 10
+                    <td/> -
 
-							<td/> Case study
+                </tr>
 
-							<td/> -
+                <tr>
+                    <td/> Project
 
-						</tr>
+                    <td/> -
 
-						<tr>
-							<td/> Project
+                </tr>
 
-							<td/> -
+                <tr>
 
-						</tr>
+                    <td/ rowspan="4"> 3
 
-						<tr>
+                    <td/> Framework Development
 
-							<td/ rowspan="4"> 3
+                    <td/> 5
 
-							<td/> Framework Development
+                    <td/> Case study
 
-							<td/> 5
+                    <td/> -
 
-							<td/> Case study
+                </tr>
 
-							<td/> -
+                <tr>
 
-						</tr>
+                    <td/ rowspan="3"> Framework Project 1
 
-						<tr>
+                    <td/ rowspan="3"> 7,5
 
-							<td/ rowspan="3"> Framework Project 1
+                    <td/> Project
 
-							<td/ rowspan="3"> 7,5
+                    <td/> -
 
-							<td/> Project
+                </tr>
 
-							<td/> -
+                <tr>
 
-						</tr>
+                    <td/> Assessment
 
-						<tr>
+                    <td/> -
 
-							<td/> Assessment
+                </tr>
 
-							<td/> -
+                <tr>
 
-						</tr>
+                    <td/> Report
 
-						<tr>
+                    <td/> -
 
-							<td/> Report
+                </tr>
 
-							<td/> -
+                <tr>
 
-						</tr>
+                    <td/ rowspan="3"> 4
 
-						<tr>
+                    <td/ rowspan="3"> Framework Project 2
 
-							<td/ rowspan="3"> 4
+                    <td/ rowspan="3"> 10
 
-							<td/ rowspan="3"> Framework Project 2
+                    <td/> Portfolio
 
-							<td/ rowspan="3"> 10
+                    <td/> -
 
-							<td/> Portfolio
+                </tr>
 
-							<td/> -
+                <tr>
 
-						</tr>
+                    <td/> Project
 
-						<tr>
+                    <td/> -
 
-							<td/> Project
+                </tr>
 
-							<td/> -
+                <tr>
 
-						</tr>
+                    <td/> Assessment
 
-						<tr>
+                    <td/> -
 
-							<td/> Assessment
+                </tr>
 
-							<td/> -
+                <tr>
 
-						</tr>
+                    <td/> Quartile "the entire year"
 
-						<tr>
+                    <td/> PCO
 
-							<td/> Quartile "the entire year"
+                    <td/> 12,5
 
-							<td/> PCO
+                    <td/> Portfolio
 
-							<td/> 12,5
+                    <td/> -
 
-							<td/> Portfolio
+                </tr>
 
-							<td/> -
+                <tr>
 
-						</tr>
+                    <td/ rowspan="2"> Quartile Whenever
 
-						<tr>
+                    <td/> Personality 1
 
-							<td/ rowspan="2"> Quartile Whenever
+                    <td/> 1,25
 
-							<td/> Personality 1
+                    <td/> Report
 
-							<td/> 1,25
+                    <td/> -
+                </tr>
 
-							<td/> Report
+                <tr>
 
-							<td/> -
-						</tr>
+                    <td/> Personality 2
 
-						<tr>
+                    <td/> 1,25
 
-							<td/> Personality 2
+                    <td/> Report
 
-							<td/> 1,25
+                    <td/> -
 
-							<td/> Report
+                </tr>
 
-							<td/> -
+            </tbody>
 
-						</tr>
+        </table>
 
-					</tbody>
+    </div>
 
-				</table>
+    <div id="div-processbar">
 
-			</div>
+        <label>
 
-			<div id="div-processbar">
+            EC Progressbar:
 
-				<label>
+        </label>
 
-					EC Progressbar:
+        <progress value="22.5" max="60">
 
-				</label>
+        </progress>
 
-				<progress value="22.5" max="60">
+        <br>
 
-				</progress>
+        <label id="dashboard-progress-label">
 
-				<br>
+            EC Progressbar:
 
-				<label id="dashboard-progress-label">
+        </label>
 
-					EC Progressbar:
+        <progress value="45" max="60">
 
-				</label>
+        </progress>
 
-				<progress value="45" max="60">
+        <p>
 
-				</progress>
+            You need 45 ECS to pass, I got 0 ECS so far!
 
-				<p>
+        </p>
 
-					You need 45 ECS to pass, I got 0 ECS so far!
-
-				</p>
-
-			</div>
-
-		</main>
-
-<hr>
-
-<?php require 'style/footer.php'; ?>
-
-	</body>
-
-</html>
+    </div>
+@endsection

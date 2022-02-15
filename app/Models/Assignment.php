@@ -9,7 +9,8 @@ class Assignment extends Model
 {
     use HasFactory;
 
-    public function complete() {
+    public function complete()
+    {
         $this->completed = true;
         $this->save();
     }

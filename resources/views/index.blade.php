@@ -1,169 +1,148 @@
-<?php require "style\head-1.php"; ?>
+@extends('layout')
 
-<title>
+@section('title')
+    Home Page
+@endsection
 
-    Blog
+@section('content')
+    <article>
 
-</title>
+        <h2 class="center">
 
-<meta name="description" content="David Garcia's Website Home Page">
+            HBO-ICT @ HZ
 
-</head>
+        </h2>
 
-<?php require "style\head-2.php"; ?>
 
-<h2>
+        <p>
 
-    Blog Page
+            <span class="post-p-header"> Why I think the ICT field may or may not suit me </span>
 
-</h2>
+        </p>
 
-<?php require "style\head-3.php"; ?>
-		<main class="main">
+        <p>
 
-			<article>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer"> <img class="text-img" src="/img/Picture.jpeg" id="mugshot" title="David Garcia (me)" alt="Mugshot of David"> </a>
 
-				<h2 class="center">
+            I think that the ICT field may suit me because ever since I can think of I have been playing games and explore how some stuff works. I have always been
+            interested to know how consols and pcs work and therefor read myself through articles or consumed tons of videos on youtube about the certan topics I am/was
+            interested in, such like how a CPU works or a graphics card and so on. I never went into the very detail but accepted the info I got from the internet and
+            ever since I never stopped looking up stuff or show my interest on ICT related things. Eventually I also showed interest on the coding part of the hardware we use
+            and got hooked to it because of a very good and friendly ICT teacher of mine. He showed me the world of coding and I got to dive a bit into the coding part of ICT.
+            In conclusion I believe that the ICT field suits me because I have always shown interest to it and I will hopefully manage to pass all 4 years with all the work and time
+            I will put into it.
 
-					HBO-ICT @ HZ
+        </p>
 
-				</h2>
+    </article>
 
+    <br>
 
-				<p>
+    <article>
 
-					<span class="post-p-header"> Why I think the ICT field may or may not suit me </span>
+        <p>
 
-				</p>
+            <span class="post-p-header"> Further Information </span>
 
-				<p>
+            <br>
+            <br>
 
-					<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer"> <img class="text-img" src="/img/Picture.jpeg" id="mugshot" title="David Garcia (me)" alt="Mugshot of David"> </a>
+            Due to my early interest and search for knowledge about hardware as well as some software, I happened to find out about the custom keyboard community
+            and when I turned 18 years old I finally happened to buy everything I needed for my own keyboard and then built it myself. Ever since I have been buying parts
+            for it and kept changing parts of the keyboard. The keyboard case might be the next change just for the yikes because metal cases look and sound better. My keyboard is also a
+            60% keyboard so I basically save a lot of space on my desk and can take my keyboard with me wherever I want it too such like university. If you feel inspired by the wonderful text
+            and are willing to spend hundreds of euros into the project then feel free to check out the following list with the parts you need to build one yourself:
 
-					I think that the ICT field may suit me because ever since I can think of I have been playing games and explore how some stuff works. I have always been
-					interested to know how consols and pcs work and therefor read myself through articles or consumed tons of videos on youtube about the certan topics I am/was
-					interested in, such like how a CPU works or a graphics card and so on. I never went into the very detail but accepted the info I got from the internet and
-					ever since I never stopped looking up stuff or show my interest on ICT related things. Eventually I also showed interest on the coding part of the hardware we use
-					and got hooked to it because of a very good and friendly ICT teacher of mine. He showed me the world of coding and I got to dive a bit into the coding part of ICT.
-					In conclusion I believe that the ICT field suits me because I have always shown interest to it and I will hopefully manage to pass all 4 years with all the work and time
-					I will put into it.
+        <ul>
 
-				</p>
+            <li/> PCB (Printed Circuit Board) (Hot Swap if you do not want to solder the switches to the PCB yourself)
 
-			</article>
+            <li/> Switches (do not take speed switches or whatsoever they do not make as big of a difference as you think)
 
-			<br>
+            <li/> Stabs (Stabilizers to prevent the larger keys from being all wobbly)
 
-			<article>
+            <li/> Plate (The plate basically holds the switches safe together)
 
-				<p>
+            <li/> USB-C cable (custom cables are fancy, get these)
 
-					<span class="post-p-header"> Further Information </span>
+            <li/> Keycaps
 
-					<br>
-					<br>
+            <li/> Case
 
-					Due to my early interest and search for knowledge about hardware as well as some software, I happened to find out about the custom keyboard community
-					and when I turned 18 years old I finally happened to buy everything I needed for my own keyboard and then built it myself. Ever since I have been buying parts
-					for it and kept changing parts of the keyboard. The keyboard case might be the next change just for the yikes because metal cases look and sound better. My keyboard is also a
-					60% keyboard so I basically save a lot of space on my desk and can take my keyboard with me wherever I want it too such like university. If you feel inspired by the wonderful text
-					and are willing to spend hundreds of euros into the project then feel free to check out the following list with the parts you need to build one yourself:
+            <li/> Preference: case foam to change the sound of your switches
 
-					<ul>
+            <li/> Preference: lube, to make the stabs and switches smoother which also affects the sound of your keyboard
 
-						<li/> PCB (Printed Circuit Board) (Hot Swap if you do not want to solder the switches to the PCB yourself)
+            <li/> <a href="keyboard-images.blade.php" target="_blank" rel="noopener noreferrer"> Pictures of the Components </a>
 
-						<li/> Switches (do not take speed switches or whatsoever they do not make as big of a difference as you think)
+        </ul>
 
-						<li/> Stabs (Stabilizers to prevent the larger keys from being all wobbly)
+        </p>
 
-						<li/> Plate (The plate basically holds the switches safe together)
+    </article>
 
-						<li/> USB-C cable (custom cables are fancy, get these)
+    <div id="div-keyboard">
 
-						<li/> Keycaps
+        <img id="keyboard" src="\img\keyboard.png" alt="David's Keyboard" title="My noisy keyboard">
 
-						<li/> Case
+    </div>
 
-						<li/> Preference: case foam to change the sound of your switches
+    <article id="index-article">
 
-						<li/> Preference: lube, to make the stabs and switches smoother which also affects the sound of your keyboard
+        <h2 class="center" id="motivation-header">
 
-						<li/> <a href="keyboard-images.blade.php" target="_blank" rel="noopener noreferrer"> Pictures of the Components </a>
+            Motivation Page
 
-					</ul>
+        </h2>
 
-				</p>
+        <p>
 
-			</article>
+            <span class="post-p-header"> What is my motivation for ICT? </span>
 
-			<div id="div-keyboard">
+        </p>
 
-				<img id="keyboard" src="\img\keyboard.png" alt="David's Keyboard" title="My noisy keyboard">
+        <p>
 
-			</div>
+            My motivation for ICT or not to say in general to work with and for ICT is all about passion and comfort towards the subject. I have always been interested into ICT, Games etc.. which brought
+            my passion towards Hardware and Software of PCs. Hand in hand with it came the urge to create and code a game by myself one day. With time eventually I started some coding in school since we had 2
+            coding lessons a week which got me hooked to the subject and understanding how coding and relations between the code itself and the hardware work. So my motivation for ICT has always been within me
+            since I have been a small kiddo thus the motivation never grew old but instead got bigger and the interests got wider and more profound too.
 
-			<article id="index-article">
+        </p>
 
-				<h2 class="center" id="motivation-header">
+        <p>
 
-					Motivation Page
+            <span class="post-p-header"> Why is ICT the right study for me? </span>
 
-				</h2>
+        </p>
 
-				<p>
+        <p>
 
-					<span class="post-p-header"> What is my motivation for ICT? </span>
+            If you read the paragraph above you probably already know why I think that the ICT study suits me but there is not only that. Besides all the good and fun part of ICT there is also an unsecure part.
+            I sometimes tend not be good at what I do specially in coding which leads to lots of issues which have to be fixed and which consumes a lot of time. But nevertheless I still am passionated about ICT
+            and want to give it a shot. I hope I manage to do it with the effort and work I put into it so I can prove myself that I can work in the ICT field even though I might have some issues here and there
+            with it.
 
-				</p>
+        </p>
 
-				<p>
+        <p>
 
-					My motivation for ICT or not to say in general to work with and for ICT is all about passion and comfort towards the subject. I have always been interested into ICT, Games etc.. which brought
-					my passion towards Hardware and Software of PCs. Hand in hand with it came the urge to create and code a game by myself one day. With time eventually I started some coding in school since we had 2
-					coding lessons a week which got me hooked to the subject and understanding how coding and relations between the code itself and the hardware work. So my motivation for ICT has always been within me
-					since I have been a small kiddo thus the motivation never grew old but instead got bigger and the interests got wider and more profound too.
+            As a follow up I also want to say that I think that my experience with Java and the fun it brought to me with all the projects I did at school during class also helped me out chosing to study and work
+            in the ICT field. If you want to look at what code I have written before then have a look at the following list, (if you do not have an IDE yet, we used Apache Netbeans at school, feel free to use it):
 
-				</p>
+        </p>
 
-				<p>
+        <ul>
 
-					<span class="post-p-header"> Why is ICT the right study for me? </span>
+            <li/> <a href="/folders/G03 - MultiShape.zip"> Shape Program </a>
 
-				</p>
+            <li/> <a href="/folders/Goncalo Examen 2019 HitTheColor.zip"> Hit the Color! </a>
 
-				<p>
+            <li/> <a href="/folders/Balls.zip"> Balls! </a>
 
-					If you read the paragraph above you probably already know why I think that the ICT study suits me but there is not only that. Besides all the good and fun part of ICT there is also an unsecure part.
-					I sometimes tend not be good at what I do specially in coding which leads to lots of issues which have to be fixed and which consumes a lot of time. But nevertheless I still am passionated about ICT
-					and want to give it a shot. I hope I manage to do it with the effort and work I put into it so I can prove myself that I can work in the ICT field even though I might have some issues here and there
-					with it.
+        </ul>
 
-				</p>
+    </article>
 
-				<p>
+@endsection
 
-					As a follow up I also want to say that I think that my experience with Java and the fun it brought to me with all the projects I did at school during class also helped me out chosing to study and work
-					in the ICT field. If you want to look at what code I have written before then have a look at the following list, (if you do not have an IDE yet, we used Apache Netbeans at school, feel free to use it):
-
-				</p>
-
-				<ul>
-
-					<li/> <a href="/folders/G03 - MultiShape.zip"> Shape Program </a>
-
-					<li/> <a href="/folders/Goncalo Examen 2019 HitTheColor.zip"> Hit the Color! </a>
-
-					<li/> <a href="/folders/Balls.zip"> Balls! </a>
-
-				</ul>
-
-			</article>
-
-		</main>
-
-<?php require 'style/footer.php'; ?>
-
-	</body>
-
-</html>

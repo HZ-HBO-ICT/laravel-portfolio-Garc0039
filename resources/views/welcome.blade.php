@@ -1,27 +1,10 @@
-<?php require "style\head-1.php"; ?>
+@extends('layout')
 
-<title>
-
-    Homepage
-
-</title>
-
-<meta name="description" content="David Garcia's Website Home Page">
-
-</head>
-
-<?php require "style\head-2.php"; ?>
-
-<h2>
-
+@section('title')
     Home Page
+@endsection
 
-</h2>
-
-<?php require "style\head-3.php"; ?>
-
-<main class="main">
-
+@section('content')
     <article>
 
         <h2 class="center">
@@ -161,12 +144,4 @@
 
     </article>
 
-</main>
-
-<hr>
-
-<?php require 'style/footer.php'; ?>
-
-</body>
-
-</html>
+@endsection

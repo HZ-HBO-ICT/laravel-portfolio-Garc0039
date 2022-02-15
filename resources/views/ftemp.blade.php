@@ -1,30 +1,12 @@
-<?php require "style/head-1.php"; ?>
+@extends('layout')
 
-<title>
-
-    FAQ
-
-</title>
-
-<meta name="description" content="David Garcia's Website FAQ Page">
-
-</head>
-
-<?php require "style/head-2.php"; ?>
-
-<h2>
-
+@section('title')
     FAQ Page
+@endsection
 
-</h2>
-
-<?php require "style/head-3.php"; ?>
-
+@section('content')
 @foreach ($faqs as $faq)
      <?= $faq->question; ?>
      <?= $faq->answer; ?>
  @endforeach
-
-<hr>
-
-<?php require "style/footer.php"; ?>
+@endsection

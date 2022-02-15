@@ -1,177 +1,152 @@
-<?php require "style\head-1.php"; ?>
+@extends('layout')
 
-<title>
-
-    Profile
-
-</title>
-
-<meta name="description" content="David Garcia's Website Profile Page">
-
-</head>
-
-<?php require "style\head-2.php"; ?>
-
-<h2>
-
+@section('title')
     Profile Page
+@endsection
 
-</h2>
+@section('content')
+    <h1  class="underline">
 
-<?php require "style\head-3.php"; ?>
+        Hi there my name is David, feel free to look around if you want to get to know me :)
 
-<main class="main">
+    </h1>
 
-			<h1  class="underline">
+    <h2 id="profile-h2" class="underline">
 
-				Hi there my name is David, feel free to look around if you want to get to know me :)
+        Personal information:
 
-			</h1>
+    </h2>
 
-			<h2 id="profile-h2" class="underline">
+    <br>
+    <br>
+    <br>
 
-				Personal information:
+    <article>
 
-			</h2>
+        <p>
 
-			<br>
-			<br>
-			<br>
+            <img class="text-img" alt="Mugshot of David" id="profile-david-img" title="David Garcia (me)" src="/img/Picture.jpeg">
 
-			<article>
+                Seems like you are interested about reading some of me then let us start with some information about me.
+                My name is David as you can probably already tell and I am 19 years old by now instead of the 18 you maybe
+                saw on my <span class="highlight">WHO AM I</span> assignment, how time flies. Either way my full name is <span class="highlight">David GARCIA VISEU HENRIQUES</span> and even tho it may sound
+                spanish I sadly am not, sorry to disappoint you on that one. I went to school in Luxembourg and have my diploma on our
+                General secondary education - technical division - engineering section, which basically means that I hopefully will make it through
+                these studies. Further more I made the diploma in English, German and Luxembourgish and you may or may not believe it but we have our
+                own language indeed. Jokes aside it is a pleasure to be able to be here and to start my studies here. If you are interested in some more
+                infomation make sure to check out the follow up text(s).
 
-				<p>
+                <br>
+                <br>
 
-					<img class="text-img" alt="Mugshot of David" id="profile-david-img" title="David Garcia (me)" src="/img/Picture.jpeg">
+        </p>
 
-						Seems like you are interested about reading some of me then let us start with some information about me.
-						My name is David as you can probably already tell and I am 19 years old by now instead of the 18 you maybe
-						saw on my <span class="highlight">WHO AM I</span> assignment, how time flies. Either way my full name is <span class="highlight">David GARCIA VISEU HENRIQUES</span> and even tho it may sound
-						spanish I sadly am not, sorry to disappoint you on that one. I went to school in Luxembourg and have my diploma on our
-						General secondary education - technical division - engineering section, which basically means that I hopefully will make it through
-						these studies. Further more I made the diploma in English, German and Luxembourgish and you may or may not believe it but we have our
-						own language indeed. Jokes aside it is a pleasure to be able to be here and to start my studies here. If you are interested in some more
-						infomation make sure to check out the follow up text(s).
+    </article>
 
-						<br>
-						<br>
+    <br>
 
-				</p>
+    <div1 class="div1">
 
-			</article>
+        <p>
 
-			<br>
+            Main subjects during my studies in Luxembourg:
 
-			<div1 class="div1">
+            <ul>
 
-				<p>
+                <li> Mathematics </li>
 
-					Main subjects during my studies in Luxembourg:
+                <li> Physics </li>
 
-					<ul>
+                <li> Chemistry </li>
 
-						<li> Mathematics </li>
+                <li> Technology </li>
 
-						<li> Physics </li>
+            </ul>
 
-						<li> Chemistry </li>
+    </p>
 
-						<li> Technology </li>
+    </div1>
 
-					</ul>
+    <div2 class="div2">
 
-			</p>
+        <p>
 
-			</div1>
+            Other subjects of importance during my studies in Luxembourg:
 
-			<div2 class="div2">
+            <ul>
 
-				<p>
+                <li>  Eletrical engineering </li>
 
-					Other subjects of importance during my studies in Luxembourg:
+                <li> Mechanics </li>
 
-					<ul>
+                <li> Computer science (Java) </li>
 
-						<li>  Eletrical engineering </li>
+                <li> Global studies </li>
 
-						<li> Mechanics </li>
+            </ul>
 
-						<li> Computer science (Java) </li>
+        </p>
 
-						<li> Global studies </li>
+    </div2>
 
-					</ul>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
-				</p>
+    <h3 class="underline">
 
-			</div2>
+        EXTRA-CURRICULAR ACTIVITIES (e.g. student job and leisure):
 
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
+    </h3>
 
-			<h3 class="underline">
+    <p>
 
-				EXTRA-CURRICULAR ACTIVITIES (e.g. student job and leisure):
+        Do you work/are you planning to work alongside your studies? What do you do in your spare time? How do you think
+        you can combine this with studying?
 
-			</h3>
+    </p>
 
-			<p>
+    <article>
 
-				Do you work/are you planning to work alongside your studies? What do you do in your spare time? How do you think
-				you can combine this with studying?
+        <p>
 
-			</p>
+            I do not plan on going to work during my studies but if for whatever reason money gets short I will not hesitate to get a job and to earn some money on the side.
+            I spend a lot of time on youtube watching a variety of videos which reaches from comedy to informative videos. I also invest some time into costumizing hardware
+            (more like keyboards). I have built one myself and am getting new things for it whenever a possability approaches. I also play videogames when I have time which
+            is sadly not often the case but which is fine with me.
+            is sadly not often the case but which is fine with me.
+            <br>
+            A good way to combine my hobbies/interests with my studies would be to maybe talk to people and see if they share the same interests as I do and therefor work
+            more efficiently with and for them. I would also like to inspire people with it and maybe awake someone's interest with it. We could maybe work on a project
+            and at the end we all would learn something out of it. I also think that combining my hobbies with the studies will maybe come in handy when it comes to understanding
+            of linking between certain IT subjects.
 
-			<article>
+        </p>
 
-				<p>
+    </article>
 
-					I do not plan on going to work during my studies but if for whatever reason money gets short I will not hesitate to get a job and to earn some money on the side.
-					I spend a lot of time on youtube watching a variety of videos which reaches from comedy to informative videos. I also invest some time into costumizing hardware
-					(more like keyboards). I have built one myself and am getting new things for it whenever a possability approaches. I also play videogames when I have time which
-					is sadly not often the case but which is fine with me.
-					is sadly not often the case but which is fine with me.
-					<br>
-					A good way to combine my hobbies/interests with my studies would be to maybe talk to people and see if they share the same interests as I do and therefor work
-					more efficiently with and for them. I would also like to inspire people with it and maybe awake someone's interest with it. We could maybe work on a project
-					and at the end we all would learn something out of it. I also think that combining my hobbies with the studies will maybe come in handy when it comes to understanding
-					of linking between certain IT subjects.
+    <article>
 
-				</p>
+        <p>
 
-			</article>
+            If you have further questions about me or if something is not clear yet and you need some more answeres, please consider on contacting
+            me through any of these platforms:
 
-			<article>
+            <ul>
 
-				<p>
+                <li> <a href=""><span class="underline"> E-mail: Nexuss02@outlook.com </span> </a> </li>
+                <li> <a href="https://www.facebook.com/profile.php?id=100006327525211" target="_blank" rel="noopener noreferrer"> Facebook: Garcia David </a> </li>
+                <li> <a href="https://www.instagram.com/cxllmedxvid/" target="_blank" rel="noopener noreferrer"> Instagram: cxllmedxvid  </a> </li>
+                <li> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer"> Onlyfans  </a> </li>
 
-					If you have further questions about me or if something is not clear yet and you need some more answeres, please consider on contacting
-					me through any of these platforms:
+            </ul>
 
-					<ul>
+        </p>
 
-						<li> <a href=""><span class="underline"> E-mail: Nexuss02@outlook.com </span> </a> </li>
-						<li> <a href="https://www.facebook.com/profile.php?id=100006327525211" target="_blank" rel="noopener noreferrer"> Facebook: Garcia David </a> </li>
-						<li> <a href="https://www.instagram.com/cxllmedxvid/" target="_blank" rel="noopener noreferrer"> Instagram: cxllmedxvid  </a> </li>
-						<li> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer"> Onlyfans  </a> </li>
-
-					</ul>
-
-				</p>
-
-			</article>
-
-		</main>
-<hr>
-
-<?php require 'style/footer.php'; ?>
-
-	</body>
-
-</html>
+    </article>
+@endsection

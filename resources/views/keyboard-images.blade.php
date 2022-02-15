@@ -1,42 +1,19 @@
-<?php require "style\head-1.php"; ?>
+@extends('layout')
 
-<title>
-
-    Blog
-
-</title>
-
-<meta name="description" content="David Garcia's Website Home Page">
-
-</head>
-
-<?php require "style\head-2.php"; ?>
-
-<h2>
-
+@section('title')
     Blog Page
+@endsection
 
-</h2>
+@section('content')
+    <article class="post-p">
 
-<?php require "style\head-3.php"; ?>
-		<main>
+        <h2 class="underline">
 
-			<article class="post-p">
+            How do the components look like?
 
-				<h2 class="underline">
+        </h2>
 
-					How do the components look like?
+        <p/> Still no pics here sorry, <a href="index.blade.php"> go back </a>
 
-				</h2>
-
-				<p/> Still no pics here sorry, <a href="index.blade.php"> go back </a>
-
-			</article>
-
-		</main>
-
-<?php require 'style/footer.php'; ?>
-
-	</body>
-
-</html>
+    </article>
+@endsection
