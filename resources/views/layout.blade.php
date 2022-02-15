@@ -35,7 +35,6 @@
         <img src="/img/logo.png" id="logo" href="https://www.crunchyroll.com/" target="_blank" rel="noopener noreferrer">
 
         <nav>
-
             <ul>
                 <li> <a href="/" class="{{Request::is('/') ? "active" : ''}}"> Home </a> </li>
                 <li> <a href="/profile" class="{{Request::is('profile') ? "active" : ''}}"> Profile </a> </li>
@@ -75,11 +74,11 @@
 
             <ul class="footer-ul-2">
 
-                <li> <a href="https://teams.microsoft.com/l/team/19%3a2e2afa0286b04932be16cb8ad2d9d2c0%40thread.skype/conversations?groupId=95bddebc-a340-4d88-81fc-b80e0bfc70c3&tenantId=4c16deb3-342d-4fca-bcd5-b1429308034c" target="_blank" rel="noopener noreferrer"> Teams environment of the HBO-ICT Course </li>
+                <li> <a href="https://teams.microsoft.com/l/team/19%3a2e2afa0286b04932be16cb8ad2d9d2c0%40thread.skype/conversations?groupId=95bddebc-a340-4d88-81fc-b80e0bfc70c3&tenantId=4c16deb3-342d-4fca-bcd5-b1429308034c" target="_blank" rel="noopener noreferrer"> Teams environment of the HBO-ICT Course </a> </li>
 
-                <li> <a href="https://learn.hz.nl/" target="_blank" rel="noopener noreferrer"> Learn environment </li>
+                <li> <a href="https://learn.hz.nl/" target="_blank" rel="noopener noreferrer"> Learn environment </a> </li>
 
-                <li> <a href="https://apps.hz.nl/angular/studievoortgang/studiestatus" target="_blank" rel="noopener noreferrer"> MyHZ </li>
+                <li> <a href="https://apps.hz.nl/angular/studievoortgang/studiestatus" target="_blank" rel="noopener noreferrer"> MyHZ </a> </li>
 
             </ul>
 

@@ -1,9 +1,14 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Models\Blog;
 
 class ProfileController {
     public function show() {
-        return view('profile');
+        $blogs = Blog::all();
+
+        return view('profile', [
+            'blogs' => $blogs
+        ]);
     }
 }

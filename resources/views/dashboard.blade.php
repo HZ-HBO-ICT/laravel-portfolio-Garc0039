@@ -33,38 +33,37 @@
 
                     <td/ rowspan="3"> 1
 
-                    <td/> Program and Career Orientation
+                    <td/> {{$grades[0]->course_name}}
 
                     <td/> 2,5
 
-                    <td/> Assessment
+                    <td/> {{$grades[0]->test_name}}
 
-                    <td/> -
-
-                </tr>
-
-                <tr>
-
-                    <td/> Computer Science Basics
-
-                    <td/> 5
-
-                    <td/> Written Exam
-
-                    <td/> -
+                    <td/> {{$grades[0]->best_grade}}
 
                 </tr>
 
                 <tr>
 
-                    <td/> Programming Basics
+                    <td/> {{$grades[1]->course_name}}
 
                     <td/> 5
 
-                    <td/> Case study
+                    <td/> {{$grades[1]->test_name}}
 
-                    <td/> -
+                    <td/> {{$grades[1]->best_grade}}
 
+                </tr>
+
+                <tr>
+
+                    <td/> {{$grades[2]->course_name}}
+
+                    <td/> 5
+
+                    <td/> {{$grades[2]->test_name}}
+
+                    <td/> {{$grades[2]->best_grade}}
 
                 </tr>
 
@@ -72,20 +71,20 @@
 
                     <td/ rowspan="2"> 2
 
-                    <td/ rowspan="2"> Object Oriented Programming
+                    <td/ rowspan="2"> {{$grades[3]->course_name}}
 
                     <td/ rowspan="2"> 10
 
-                    <td/> Case study
+                    <td/> {{$grades[3]->test_name}}
 
-                    <td/> -
+                    <td/> {{$grades[3]->best_grade}}
 
                 </tr>
 
                 <tr>
-                    <td/> Project
+                    <td/> {{$grades[4]->test_name}}
 
-                    <td/> -
+                    <td/> {{$grades[4]->best_grade}}
 
                 </tr>
 
@@ -214,7 +213,7 @@
 
         </label>
 
-        <progress value="22.5" max="60">
+        <progress value="{{$Ecs}}" max="60">
 
         </progress>
 

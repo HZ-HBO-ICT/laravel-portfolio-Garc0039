@@ -149,4 +149,51 @@
         </p>
 
     </article>
+
+    <h2 class="underline">
+        Recent Blog Posts:
+    </h2>
+
+    @for ($index = count($blogs) - 1; $index > count($blogs) - 4; $index--)
+        <section>
+
+            <article>
+
+                <p>
+
+                    Article {{$blogs[$index]->id}}: {{$blogs[$index]->date}}
+
+                </p>
+
+                <h2 class="underline">
+
+                    {{$blogs[$index]->title}}
+
+                </h2>
+
+                @if($blogs[$index]->sub_title != null)
+                    <h3 id="blog-h3">
+
+                        {{$blogs[$index]->sub_title}}
+
+                    </h3>
+                @endif
+
+                <p>
+
+                    <span class="underline"> {{$blogs[$index]->question}} </span>
+
+                    <br>
+                    <br>
+
+                    {{$blogs[$index]->excerpt}}
+
+                    <a href="/blog/{{$blogs[$index]->title_uri}}"> read more </a>
+
+                </p>
+
+            </article>
+
+        </section>
+    @endfor
 @endsection
