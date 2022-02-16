@@ -2,7 +2,7 @@
 namespace App\Http\Controllers;
 
 class WelcomeController {
-    public function show() {
+    public function index() {
             return view('welcome');
     }
 }

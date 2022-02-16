@@ -5,5 +5,9 @@
 @endsection
 
 @section('content')
-<?= $titleUri->body ?>
+    @if(!$titleUri)
+        <?= $blogs[0]->body ?>
+    @else
+        <?= $titleUri->body ?>
+    @endif
 @endsection

@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Grade;
 
 class DashboardController {
-    public function show() {
+    public function index() {
         $grades = Grade::all();
 
         $Ecs = 0;

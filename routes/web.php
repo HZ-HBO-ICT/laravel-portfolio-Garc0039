@@ -15,12 +15,25 @@ use App\Http\Controllers\{ProfileController, WelcomeController, BlogController, 
 |
 */
 
-Route::get('/', [WelcomeController::class, 'show']);
-Route::get('/profile', [ProfileController::class, 'show']);
-Route::get('/blog', [BlogController::class, 'show']);
-Route::get('/blog/{blog}', [BlogController::class, 'showBlogs']);
-Route::get('/faq', [FaqController::class, 'show']);
-Route::get('/dashboard', [DashboardController::class, 'show']);
+// home page
+Route::get('/', [WelcomeController::class, 'index']);
 
-Route::get('/post/{post}', [PostController::class, 'show']);
+// profile page
+Route::get('/profile', [ProfileController::class, 'index']);
 
+// blog page
+Route::get('/blog', [BlogController::class, 'index']);
+Route::post('/blog', [BlogController::class, 'store']);
+Route::get('/blog/create', [BlogController::class, 'create']);
+Route::get('/blog/{blog}', [BlogController::class, 'showBlog']);
+
+// faq page
+Route::get('/faq', [FaqController::class, 'index']);
+Route::post('/faq', [FaqController::class, 'store']);
+Route::get('/faq/create', [FaqController::class, 'create']);
+
+// dashboard page
+Route::get('/dashboard', [DashboardController::class, 'index']);
+
+// post page
+Route::get('/post/{post}', [PostController::class, 'index']);
