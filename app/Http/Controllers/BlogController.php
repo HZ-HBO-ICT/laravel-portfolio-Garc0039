@@ -13,7 +13,7 @@ class BlogController {
         ]);
     }
 
-    public function showBlog($titleUri)
+    public function show($titleUri)
     {
         $blogs = Blog::all();
         $titleUri = Blog::where('title_uri', $titleUri)->first();
@@ -46,18 +46,36 @@ class BlogController {
         return view('create_blog');
     }
 
-    public function edit()
+    public function edit($titleUri)
     {
-        //
+        $blog = Blog::where('title_uri', $titleUri)->first();
+
+        return view('edit_blog', ['blog' => $blog]);
     }
 
-    public function update()
+    public function update($titleUri)
     {
-        //
+        $blog = Blog::where('title_uri', $titleUri)->first();
+
+        $blog->title_uri = request('title_uri');
+        $blog->date = request('date');
+        $blog->title = request('title');
+        $blog->sub_title = request('sub_title');
+        $blog->question = request('question');
+        $blog->excerpt = request('excerpt');
+        $blog->body = request('body');
+
+        $blog->save();
+
+        return redirect('/blog');
     }
 
-    public function destroy()
+    public function destroy($titleUri)
     {
-        //
+        $blog = Blog::where('title_uri', $titleUri)->first();
+
+        $blog->delete();
+
+        return redirect('/blog');
     }
 }

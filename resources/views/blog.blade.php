@@ -12,7 +12,7 @@
 
             <p>
 
-                Article {{$blog->id}}: {{$blog->date}}
+                {{$blog->date}}
 
             </p>
 

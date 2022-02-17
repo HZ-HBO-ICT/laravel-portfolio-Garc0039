@@ -32,18 +32,31 @@ class FaqController
         return view('create_faq');
     }
 
-    public function edit()
+    public function edit($id)
     {
-        //
+        $faq = Faq::find($id);
+
+        return view('edit_faq', ['faq' => $faq]);
     }
 
-    public function update()
+    public function update($id)
     {
-        //
+        $faq = Faq::find($id);
+
+        $faq->question = request('question');
+        $faq->answer = request('answer');
+
+        $faq->save();
+
+        return redirect('/faq');
     }
 
-    public function destroy()
+    public function destroy($id)
     {
-        //
+        $faq = Faq::find($id);
+
+        $faq->delete();
+
+        return redirect('/faq');
     }
 }

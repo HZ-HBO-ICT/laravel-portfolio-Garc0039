@@ -161,7 +161,7 @@
 
                 <p>
 
-                    Article {{$blogs[$index]->id}}: {{$blogs[$index]->date}}
+                    {{$blogs[$index]->date}}
 
                 </p>
 
