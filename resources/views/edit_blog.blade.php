@@ -15,37 +15,67 @@
         <label for="title_uri">
             Title Uri:
         </label> <br>
-        <input type="text" name="title_uri" value="{{$blog->title_uri}}" class="inputText"> <br> <br>
+        <input type="text" name="title_uri" class="inputText" value="{{$blog->title_uri}}">
+        @error('title_uri')
+        <p>
+            {{$errors->first('title_uri')}}
+        </p>
+        @enderror <br> <br>
 
         <label for="date">
             Date:
         </label> <br>
-        <input type="text" name="date" value="{{$blog->date}}" class="inputText"> <br> <br>
+        <input type="text" name="date" class="inputText" value="{{$blog->date}}">
+        @error('date')
+        <p>
+            {{$errors->first('date')}}
+        </p>
+        @enderror <br> <br>
 
         <label for="title">
             Title:
         </label> <br>
-        <input type="text" name="title" value="{{$blog->title}}" class="inputText"> <br> <br>
+        <input type="text" name="title" class="inputText" value="{{$blog->title}}">
+        @error('title')
+        <p>
+            {{$errors->first('title')}}
+        </p>
+        @enderror <br> <br>
 
         <label for="sub_title">
             Sub Title:
         </label> <br>
-        <input type="text" name="sub_title" value="{{$blog->sub_title}}" class="inputText"> <br> <br>
+        <input type="text" name="sub_title" class="inputText" value="{{$blog->sub_title}}"> <br> <br>
 
         <label for="question">
             Question:
         </label> <br>
-        <input type="text" name="question" value="{{$blog->question}}" class="inputText"> <br> <br>
+        <input type="text" name="question" class="inputText" value="{{$blog->question}}">
+        @error('question')
+        <p>
+            {{$errors->first('question')}}
+        </p>
+        @enderror <br> <br>
 
         <label for="excerpt">
             Excerpt:
         </label> <br>
-        <input type="text" name="excerpt" value="{{$blog->excerpt}}" class="inputText"> <br> <br>
+        <input type="text" name="excerpt" class="inputText" value="{{$blog->excerpt}}">
+        @error('excerpt')
+        <p>
+            {{$errors->first('excerpt')}}
+        </p>
+        @enderror <br> <br>
 
         <label for="body">
             Body:
         </label> <br>
-        <input type="text" name="body" value="{{$blog->body}}" class="inputText"> <br> <br>
+        <input type="text" name="body" class="inputText" value="{{$blog->body}}">
+        @error('body')
+        <p>
+            {{$errors->first('body')}}
+        </p>
+        @enderror <br> <br>
         <input type="submit">
     </form>
     <br>

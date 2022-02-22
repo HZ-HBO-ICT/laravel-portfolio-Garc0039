@@ -12,15 +12,27 @@
     <form method="POST" action="/faq/{{$faq->id}}">
         @csrf
         @method('PUT')
-         <label for="question">
-                Question:
-            </label> <br>
-            <input type="text" name="question" value="{{$faq->question}}" class="inputText"> <br> <br>
 
-            <label for="answer">
-                Answer:
-            </label> <br>
-            <input type="text" name="answer" value="{{$faq->answer}}" class="inputText"> <br> <br>
+        <label for="question">
+            Question:
+        </label> <br>
+        <input type="text" name="question" class="inputText" value="{{$faq->question}}">
+        @error('question')
+        <p>
+            {{$errors->first('question')}}
+        </p>
+        @enderror <br> <br>
+
+        <label for="answer">
+            Answer:
+        </label> <br>
+        <input type="text" name="answer" class="inputText" value="{{$faq->answer}}">
+        @error('answer')
+        <p>
+            {{$errors->first('answer')}}
+        </p>
+        @enderror <br> <br>
+
         <input type="submit">
     </form>
     <br>

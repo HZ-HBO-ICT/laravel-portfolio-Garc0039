@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Faq;
+use Illuminate\Http\Request;
 
 class FaqController
 {
@@ -10,21 +11,21 @@ class FaqController
     {
         $faqs = Faq::all();
 
-        return view('ftemp', [
+        return view('faq_template', [
             'faqs' => $faqs
         ]);
     }
 
+    public function show()
+    {
+        return redirect(route('faq.index'));
+    }
+
     public function store()
     {
-        $faq = new Faq();
+        Faq::create($this->validateForm());
 
-        $faq->question = request('question');
-        $faq->answer = request('answer');
-
-        $faq->save();
-
-        return redirect('/faq');
+        return redirect(route('faq.index'));
     }
 
     public function create()
@@ -32,31 +33,32 @@ class FaqController
         return view('create_faq');
     }
 
-    public function edit($id)
+    public function edit(Faq $id)
     {
-        $faq = Faq::find($id);
+//        $faq = Faq::find($id);
 
-        return view('edit_faq', ['faq' => $faq]);
+        return view('edit_faq', ['faq' => $id]);
     }
 
-    public function update($id)
+    public function update(Faq $id)
     {
-        $faq = Faq::find($id);
+        $id->update($this->validateForm());
 
-        $faq->question = request('question');
-        $faq->answer = request('answer');
-
-        $faq->save();
-
-        return redirect('/faq');
+        return redirect(route('faq.index'));
     }
 
-    public function destroy($id)
+    public function destroy(Faq $id)
     {
-        $faq = Faq::find($id);
+        $id->delete();
 
-        $faq->delete();
+        return redirect(route('faq.index'));
+    }
 
-        return redirect('/faq');
+    public function validateForm()
+    {
+        return request()->validate([
+            'question' => 'required',
+            'answer' => 'required'
+        ]);
     }
 }

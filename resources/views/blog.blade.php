@@ -39,7 +39,7 @@
 
                 {{$blog->excerpt}}
 
-                <a href="/blog/{{$blog->title_uri}}"> read more </a>
+                <a href="{{route('blog.show', $blog)}}"> read more </a>
 
             </p>
 

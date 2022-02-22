@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 use App\Models\Blog;
+use Illuminate\Http\Request;
 
-class BlogController {
+class BlogController
+{
     public function index()
     {
         $blogs = Blog::all();
@@ -13,32 +15,21 @@ class BlogController {
         ]);
     }
 
-    public function show($titleUri)
+    public function show(Blog $blog)
     {
         $blogs = Blog::all();
-        $titleUri = Blog::where('title_uri', $titleUri)->first();
 
-        return view('btemp', [
-            'titleUri' => $titleUri,
+        return view('blog_template', [
+            'required_blog' => $blog,
             'blogs' => $blogs
         ]);
     }
 
-    public function store()
+    public function store(Request $request)
     {
-        $blog = new Blog();
+        Blog::create($this->validateForm($request));
 
-        $blog->title_uri = request('title_uri');
-        $blog->date = request('date');
-        $blog->title = request('title');
-        $blog->sub_title = request('sub_title');
-        $blog->question = request('question');
-        $blog->excerpt = request('excerpt');
-        $blog->body = request('body');
-
-        $blog->save();
-
-        return redirect('/blog');
+        return redirect(route('blog.index'));
     }
 
     public function create()
@@ -46,36 +37,34 @@ class BlogController {
         return view('create_blog');
     }
 
-    public function edit($titleUri)
+    public function edit(Blog $blog)
     {
-        $blog = Blog::where('title_uri', $titleUri)->first();
-
         return view('edit_blog', ['blog' => $blog]);
     }
 
-    public function update($titleUri)
+    public function update(Blog $blog, Request $request)
     {
-        $blog = Blog::where('title_uri', $titleUri)->first();
+        $blog->update($this->validateForm($request));
 
-        $blog->title_uri = request('title_uri');
-        $blog->date = request('date');
-        $blog->title = request('title');
-        $blog->sub_title = request('sub_title');
-        $blog->question = request('question');
-        $blog->excerpt = request('excerpt');
-        $blog->body = request('body');
-
-        $blog->save();
-
-        return redirect('/blog');
+        return redirect(route('blog.index'));
     }
 
-    public function destroy($titleUri)
+    public function destroy(Blog $blog)
     {
-        $blog = Blog::where('title_uri', $titleUri)->first();
-
         $blog->delete();
 
-        return redirect('/blog');
+        return redirect(route('blog.index'));
+    }
+
+    public function validateForm(Request $request)
+    {
+        return $request->validate([
+            'title_uri' => 'required',
+            'date' => 'required',
+            'title' => 'required',
+            'question' => 'required',
+            'excerpt' => 'required',
+            'body' => 'required'
+        ]);
     }
 }

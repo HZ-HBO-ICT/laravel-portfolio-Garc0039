@@ -14,11 +14,21 @@
         <label for="question">
             Question:
         </label> <br>
-        <input type="text" name="question"> <br> <br>
+        <input type="text" name="question" value="{{old('question')}}">
+        @error('question')
+        <p>
+            {{$errors->first('question')}}
+        </p>
+        @enderror <br> <br>
         <label for="answer">
             Answer:
         </label> <br>
-        <input type="text" name="answer"> <br> <br>
+        <input type="text" name="answer" value="{{old('answer')}}">
+        @error('answer')
+        <p>
+            {{$errors->first('answer')}}
+        </p>
+        @enderror <br> <br>
         <input type="submit">
     </form>
     <br>

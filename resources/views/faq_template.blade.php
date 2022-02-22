@@ -19,6 +19,5 @@
              <?= strip_tags($faq->answer); ?>
         <br>
     </p>
-{{--    @endif--}}
- @endforeach
+@endforeach
 @endsection
