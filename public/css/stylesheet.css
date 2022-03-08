@@ -1,0 +1,463 @@
+/* Classes */
+
+.text-img
+{
+	float: left;
+}
+
+.bold
+{
+	font-weight: bold;
+}
+
+.para1
+{
+	float: right;
+	text-align: left;
+	list-style-position: inside;
+}
+
+.div2
+{
+	float: right;
+}
+
+.div1
+{
+	float: left;
+}
+
+.highlight
+{
+	background-color: pink;
+}
+
+.underline
+{
+	text-decoration: underline;
+}
+
+.nounderline
+{
+	text-decoration: none;
+}
+
+.center
+{
+	text-align: center;
+}
+
+.divs
+{
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+	width: 67%;
+	position: fixed;
+	top: 0;
+}
+
+.img
+{
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+	width: 100px;
+	height: 100px;
+}
+
+.post-p
+{
+	border-top: solid 1px black;
+	border-bottom: solid 1px black;
+}
+
+.post-p-header
+{
+	text-decoration: underline;
+	background-color: black;
+	color: white;
+	padding: 2px;
+}
+
+.faq-top-border
+{
+	border-top: solid 1px black;
+	padding-top: 20px;
+}
+
+.back-ul
+{
+	list-style-type: none;
+	float: right;
+}
+
+.back-a
+{
+	background-color: #000000;
+	text-decoration: none;
+	color: white;
+	padding: 3px;
+}
+
+.back-a:hover
+{
+	opacity: 0.3;
+	color: white;
+}
+
+.inputText
+{
+    height: 100px;
+    width: 1413px;
+}
+
+/* --- */
+
+/* ID Tag Classes */
+
+#logo
+{
+	top: 63px;
+	left: 250px;
+	width: 170px;
+	height: 59px;
+	position: fixed;
+}
+
+#mugshot
+{
+	width: 170px;
+	height: 200px;
+	margin-right: 10px;
+}
+
+#div-keyboard
+{
+	width: 400px;
+	left: 595px;
+	position: absolute;
+	z-index: -1;
+}
+
+#keyboard
+{
+	width: 300px;
+	height: 400px;
+	transform: rotate(270deg);
+}
+
+#index-article
+{
+	padding-top: 350px;
+}
+
+#motivation-header
+{
+	border-top: solid 1px black;
+	padding-top: 20px;
+}
+
+#profile-david-img
+{
+	width: 170px;
+	height: 200px;
+	margin-right: 10px;
+}
+
+#profile-h2
+{
+	float: left;
+}
+
+#div-processbar
+{
+	padding-top: 10px; text-align: center;
+}
+
+#div-table
+{
+	padding-top: 20px;
+}
+#blog-h3
+{
+	font-size: 20px;
+}
+
+#faq-main
+{
+	padding-top: 3px;
+}
+
+#safari-p
+{
+	font-size: 10px;
+}
+
+#programming-yes
+{
+	font-size: 550px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#section-article-img
+{
+	width: 100%; height: 400px;
+}
+
+#dashboard-progress-label
+{
+	color: white;
+}
+
+/* --- */
+
+/* Selector Tag Classes */
+
+body
+{
+	font-size: 17px;
+	margin-left: 250px;
+	margin-right: 250px;
+	word-break: keep-all;
+	font-family: arial;
+}
+
+h1
+{
+	text-align: center;
+}
+
+h3
+{
+	font-size: 1.5em;
+}
+
+header h2
+{
+	text-decoration: underline;
+	background-color: black;
+	color: white;
+	padding: 5px;
+	text-align: center;
+	/*height: auto;*/
+}
+
+p
+{
+	color: black;
+}
+
+progress
+{
+	-webkit-appearance: none;
+}
+
+progress[value]::-webkit-progress-bar /* -webkit-progress-bar = (the container) */
+{
+	background-color: #eee;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-webkit-progress-value
+{
+	border-radius: 5px;
+	background-color: pink;
+}
+
+/* --- */
+
+/* Article Content Styling */
+
+article p ul li a:link
+{
+	color: black;
+}
+
+article p ul li a:hover
+{
+	color: blue;
+}
+
+article p ul li a:visited
+{
+	color: purple;
+}
+
+/* --- */
+
+/* Navbar Content Styling */
+
+nav
+{
+	margin-right: auto;
+	margin-left: auto;
+	width: 433px;
+}
+
+nav ul
+{
+	list-style-type: none;
+}
+
+nav ul li
+{
+	display: inline;
+	font-size: 20px;
+}
+
+nav ul li a
+{
+	background-color: #000000;
+	margin-right: 10px;
+	text-decoration: none;
+	color: white;
+	padding: 3px;
+}
+
+nav li a:hover
+{
+	opacity: 0.3;
+	color: white;
+}
+
+.active
+{
+	background-color: white;
+	color: black;
+	border: 1px solid black;
+}
+
+.active:hover
+{
+	opacity: 1;
+	color: black;
+}
+
+/* --- */
+
+/* Section Content Styling*/
+
+section article
+{
+	border-top: solid 1px black;
+}
+
+/* --- */
+
+/* Dashboard */
+
+table
+{
+	border-collapse: collapse;
+    border: 1px solid black;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+th
+{
+    border: 1px solid black;
+	padding: 5px;
+}
+
+td
+{
+	border: 1px solid black;
+	text-align: center;
+	padding: 5px;
+}
+
+/* --- */
+
+/* Main Content Styling */
+
+main article ul li a
+{
+	color: black;
+}
+
+main article ul li a:hover
+{
+	color: pink;
+}
+
+.main
+{
+	border-top: 1px solid black;
+}
+
+/* --- */
+
+/* Footer Content Styling */
+
+.footer-aside
+{
+	border-top: solid 1px black;
+}
+
+footer aside ul
+{
+	padding-top: 5px;
+}
+
+footer aside ul li
+{
+	display: inline;
+	font-size: 10px;
+	padding-right: 5px;
+}
+
+footer aside ul li a
+{
+	color: purple;
+}
+
+footer aside ul li a:hover
+{
+	color: blue;
+}
+
+.footer-ul-1
+{
+	margin-left: 292px;
+	margin-right: 292px;
+}
+
+.footer-ul-2
+{
+	border-top: none;
+	margin-left: 500px;
+	margin-right: 500px;
+}
+
+/* --- */
+
+/* Anker General Styling */
+
+a
+{
+	color: black;
+}
+
+a:hover
+{
+	color: pink;
+}
+
+/* --- */
+
+/* Optimisation Try */
+
+@media (max-width: 400px)
+{
+	body
+	{
+		font-size: 12px;
+		margin-left: 100px;
+		margin-right: 100px;
+		word-break: keep-all;
+	}
+}
