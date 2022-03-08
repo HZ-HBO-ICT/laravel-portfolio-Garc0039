@@ -2,11 +2,10 @@
 
 namespace Database\Seeders;
 
-use App\Models\Grade;
+use App\Models\Course;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
 
-class GradeSeeder extends Seeder
+class CourseSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,6 +14,6 @@ class GradeSeeder extends Seeder
      */
     public function run()
     {
-        Grade::factory()->count(5)->create();
+        Course::factory()->count(5)->create();
     }
 }

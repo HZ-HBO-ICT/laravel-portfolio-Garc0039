@@ -14,19 +14,24 @@
         <label for="question">
             Question:
         </label> <br>
-        <input type="text" name="question" value="{{old('question')}}">
+        <textarea type="text" name="question" class="inputText">
+            {{ old('question') }}
+        </textarea>
         @error('question')
         <p>
-            {{$errors->first('question')}}
+            {{ $errors->first('question') }}
         </p>
         @enderror <br> <br>
+
         <label for="answer">
             Answer:
         </label> <br>
-        <input type="text" name="answer" value="{{old('answer')}}">
+        <textarea type="text" name="answer" class="inputText">
+            {{ old('answer') }}
+        </textarea>
         @error('answer')
         <p>
-            {{$errors->first('answer')}}
+            {{ $errors->first('answer') }}
         </p>
         @enderror <br> <br>
         <input type="submit">

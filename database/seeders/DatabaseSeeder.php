@@ -17,10 +17,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('grades')->insert([
-            $this->call(
-                GradeSeeder::class
-            )
-        ]);
+        $this->call(
+            GradeSeeder::class,
+            CourseSeeder::class
+        );
     }
 }

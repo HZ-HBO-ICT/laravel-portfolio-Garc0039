@@ -11,13 +11,13 @@
 
     <form method="POST" action="/grades">
         @csrf
-        <label for="course_name">
-            Course Name:
+        <label for="course_id">
+            Course ID:
         </label> <br>
-        <input type="text" name="course_name" value="{{old('course_name')}}">
-        @error('course_name')
+        <input type="text" name="course_id" value="{{old('course_id')}}">
+        @error('course_id')
         <p>
-            {{$errors->first('course_name')}}
+            {{$errors->first('course_id')}}
         </p>
         @enderror <br> <br>
 
@@ -58,16 +58,6 @@
         @error('best_grade')
         <p>
             {{$errors->first('best_grade')}}
-        </p>
-        @enderror <br> <br>
-
-        <label for="passed_at">
-            Passed at:
-        </label> <br>
-        <input type="text" name="passed_at" value="{{old('passed_at')}}">
-        @error('passed_at')
-        <p>
-            {{$errors->first('passed_at')}}
         </p>
         @enderror <br> <br>
 

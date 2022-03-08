@@ -33,23 +33,21 @@ class FaqController
         return view('create_faq');
     }
 
-    public function edit(Faq $id)
+    public function edit($id)
     {
-//        $faq = Faq::find($id);
-
-        return view('edit_faq', ['faq' => $id]);
+        return view('edit_faq', ['faq' => Faq::find($id)]);
     }
 
-    public function update(Faq $id)
+    public function update($id)
     {
-        $id->update($this->validateForm());
+        Faq::find($id)->update($this->validateForm());
 
         return redirect(route('faq.index'));
     }
 
-    public function destroy(Faq $id)
+    public function destroy($id)
     {
-        $id->delete();
+        Faq::find($id)->delete();
 
         return redirect(route('faq.index'));
     }

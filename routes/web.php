@@ -45,7 +45,8 @@ Route::delete('/faq/{id}', [FaqController::class, 'destroy']);
 Route::resource('/dashboard', DashboardController::class);
 
 // grades page
-Route::resource('/grades', GradeController::class);
+// Currently not working due to use of foreign key, would like to get feedback on how to properly apply if I have not fixed it by then
+//Route::resource('/grades', GradeController::class);
 
 // post page
 Route::get('/post/{post}', [PostController::class, 'index']);

@@ -11,82 +11,83 @@
 
             <thead>
 
-                <tr>
+            <tr>
 
-                    <th/> Quartile
+                <th/> Quartile
 
-                    <th/> Course
+                <th/> Course
 
-                    <th/> EC
+                <th/> EC
 
-                    <th/> Exam
+                <th/> Exam
 
-                    <th/> Grade
+                <th/> Grade
 
-                </tr>
+            </tr>
 
             </thead>
 
             <tbody>
 
-                <tr>
+            <tr>
 
-{{--                    <td/ rowspan="3"> 1--}}
+                <td/ rowspan="3"> 1
 
-{{--                    <td/> {{$grades[0]->course_name}}--}}
+                <td/> {{ $courses[0]->name }}
 
-{{--                    <td/> 2,5--}}
+                <td/> {{ $courses[0]->credits }}
 
-{{--                    <td/> {{$grades[0]->test_name}}--}}
+                <td/> {{ $courses[0]->grade[0]->test_name }}
 
-{{--                    <td/> {{$grades[0]->best_grade}}--}}
+                <td/> {{ $courses[0]->grade[0]->EC }}
 
-{{--                </tr>--}}
+            </tr>
 
-{{--                <tr>--}}
+            <tr>
 
-{{--                    <td/> {{$grades[1]->course_name}}--}}
+                <td/> {{ $courses[1]->name }}
 
-{{--                    <td/> 5--}}
+                <td/> {{ $courses[1]->credits }}
 
-{{--                    <td/> {{$grades[1]->test_name}}--}}
+                <td/> {{ $courses[1]->grade[0]->test_name }}
 
-{{--                    <td/> {{$grades[1]->best_grade}}--}}
+                <td/> {{ $courses[1]->grade[0]->EC }}
 
-{{--                </tr>--}}
+            </tr>
 
-{{--                <tr>--}}
+            <tr>
 
-{{--                    <td/> {{$grades[2]->course_name}}--}}
+                <td/> {{ $courses[2]->name }}
 
-{{--                    <td/> 5--}}
+                <td/> {{ $courses[2]->credits }}
 
-{{--                    <td/> {{$grades[2]->test_name}}--}}
+                <td/> {{ $courses[2]->grade[0]->test_name }}
 
-{{--                    <td/> {{$grades[2]->best_grade}}--}}
+                <td/> {{ $courses[2]->grade[0]->EC }}
 
-{{--                </tr>--}}
 
-{{--                <tr>--}}
+            </tr>
 
-{{--                    <td/ rowspan="2"> 2--}}
+            <tr>
 
-{{--                    <td/ rowspan="2"> {{$grades[3]->course_name}}--}}
+                <td/ rowspan="2"> 2
 
-{{--                    <td/ rowspan="2"> 10--}}
+                <td/ rowspan="2"> {{ $courses[3]->name }}
 
-{{--                    <td/> {{$grades[3]->test_name}}--}}
+                <td/ rowspan="2"> {{ $courses[3]->credits }}
 
-{{--                    <td/> {{$grades[3]->best_grade}}--}}
+                <td/> {{ $courses[3]->grade[0]->test_name }}
 
-{{--                </tr>--}}
+                <td/> {{ $courses[3]->grade[0]->EC }}
 
-{{--                <tr>--}}
-{{--                    <td/> {{$grades[4]->test_name}}--}}
+            </tr>
 
-{{--                    <td/> {{$grades[4]->best_grade}}--}}
+            <tr>
+                <td/> {{ $courses[3]->grade[1]->test_name }}
 
-{{--                </tr>--}}
+                <td/> {{ $courses[3]->grade[1]->EC }}
+
+            </tr>
 
                 <tr>
 
@@ -213,7 +214,7 @@
 
         </label>
 
-{{--        <progress value="{{$ecs}}" max="60">--}}
+        <progress value="0" max="60">
 
         </progress>
 

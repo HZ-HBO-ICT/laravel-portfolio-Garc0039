@@ -11,6 +11,11 @@ class Grade extends Model
 
     protected $guarded = [];
 
+    public function course()
+    {
+        return $this->belongsTo(Course::class);
+    }
+
     public function addResult($newResult)
     {
         if ($newResult <= $this->best_grade) {
@@ -24,5 +29,7 @@ class Grade extends Model
             $this->passed_at = now();
             $this->save();
         }
+
+        Course::assignCredits();
     }
 }
